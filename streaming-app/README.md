@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 Streaming App (Capstone Project)
 
-## Getting Started
+## 🔖 Project Title & Description
+**Streaming App** is a modern platform for **music streaming, podcast creation, and radio listening**.  
+It provides a simple, intuitive, and AI-augmented experience for users to discover, create, and enjoy content.  
 
-First, run the development server:
+- **Who it’s for**: Music lovers, podcasters, and radio listeners.  
+- **Why it matters**: Combines multiple content formats (music, podcasts, radio) into one accessible platform, with a modern UI and AI-assisted development.  
 
+---
+
+## 🛠️ Tech Stack
+- **Framework**: Next.js (App Router, TypeScript)  
+- **UI**: TailwindCSS, shadcn/ui  
+- **Auth & Database**: Supabase  
+- **Validation**: React Hook Form + Zod  
+- **Testing**: Vitest (unit) + Playwright (e2e)  
+- **AI Tools**: ChatGPT + Trae (AI-Native IDE) + CodeRabbit  
+
+---
+
+## 🧠 AI Integration Strategy
+
+### Code Generation
+- Use **Trae IDE** to scaffold features like auth, forms, database utilities, and middleware.  
+- Generate reusable UI components with **shadcn/ui** integration.  
+
+### Testing
+- Prompt AI to generate **Vitest unit tests** for utilities and components.  
+- Use AI to scaffold **Playwright e2e flows** (auth, navigation, streaming).  
+
+### Documentation
+- AI will maintain:
+  - **Docstrings & inline comments** (auto-generated and revised with AI).  
+  - **README.md** (this file) with updates at major commits.  
+  - **11-documentation files** inside `/docs` covering architecture, auth, database, testing, etc.  
+
+### Context-Aware Techniques
+- Provide AI with **API specs**, **file trees**, and **diffs** for targeted prompting.  
+- Use **CodeRabbit AI reviews** before merging to catch unclear logic and improve code clarity.  
+- Label commits with clear types (`feat:`, `fix:`, `docs:`) while letting AI propose messages when needed.  
+
+---
+
+## 🚀 Features
+- 🔐 Authentication (signup, login, session management with Supabase)  
+- 🎨 Modern UI with shadcn/ui + TailwindCSS  
+- 📱 Responsive design with reusable components  
+- ✅ Form validation with React Hook Form + Zod  
+- 🎥 Media streaming (music, podcasts, radio station support)  
+- 🧪 Unit and E2E testing (Vitest + Playwright)  
+- ⚡ AI-powered scaffolding, reviews, and documentation  
+
+---
+
+## 📂 Project Structure
+--to be updated--
+
+---
+app/ # Next.js App Router pages & layouts
+components/ui/ # Reusable UI components (shadcn/ui)
+lib/supabase/ # Supabase client utilities (server/browser)
+tests/ # Unit + e2e tests
+docs/ # Project documentation (11 files)
+---
+
+## ⚡ Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/bloominghowl/alx-ai-for-devs-II-capston-project.git
+```
+### 2. Install Dependencies
+```bash
+cd streaming-app
+```
+### 3. Set Up Environment
+```bash
+npm install
+```
+### 4. Run the Application
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+### 🤖 AI Usage Evidence
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scaffolding: Pages, middleware, Supabase clients, and forms generated via Trae.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Testing: AI-assisted Vitest + Playwright test writing.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Docs: README, reflection.md, and 11-documentation maintained with AI.
 
-## Learn More
+## Reviews: CodeRabbit AI used for commit messages and PR summaries.
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Credits
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Built by Angela Ayivi
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+AI partners: ChatGPT + Trae + CodeRabbit
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Capstone project for ALX Africa's AI for Devs II course.
